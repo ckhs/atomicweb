@@ -10,108 +10,46 @@
 
 #<li><a href="link1.html"><img src="image1.jpg"></a></li>#
     
- <div id="menu">
-      <ul>                                        
-          <li><a href="home.html"><img src="image1.jpg"> title="Home</a><li>
-          <li><a href="services.html" title="">TRANSPORT</a></li>
-           <li><a href="#" title="">ACCOMODATION</a></li>
-           <li><a href="#" title="">DEALS</a></li>
-           <li><a href="contact.html" title="">CONTACT</a></li>
-      </ul>
-</div>  
-    
-    #menu{
-    width:900px;
-    height: 50px;
-    clear:both;
-    background-color: #f7951e;
-    font-family: 'Exo 2', sans-serif;
-    text-align: center;
-
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-#menu ul{
-    font-family: 'Exo 2', sans-serif;
-    list-style:none;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display:block;
+
+li {
     float: left;
-    width: auto;
 }
-#menu ul li{
-    font-family: 'Exo 2', sans-serif;
-    list-style:none;
-    display:inline;
-    width:auto;
-    height:50px;
-    line-height:42px;
-    font-size:18px;
-}
-#menu ul li a{
-    font-family: 'Exo 2', sans-serif;
-    font-size: 18px;
-    height: auto;
-    width: auto;
-    float:next;
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color:#fff;
-    padding-left: 40px;
-    padding-right: 10px;
-}
-#menu ul li a:hover{
-    height:auto;
-    width: auto;
-    text-decoration:none;
-    color: #fff;
-}
-#menu ul li a.current{
-    height:auto;
-    width: auto;
-    text-decoration:none;
-    color: #fff;
 }
 
-#menu ul li:nth-of-type(1){
-
-    background:url(./images/iconza/house_32x32.png) no-repeat;
-    float: start;
-    padding-top: 5px;
-    padding-bottom: 10px;
+li a:hover:not(.active) {
+    background-color: #111;
 }
 
-#menu ul li:nth-of-type(2){
-
-    background:url(./images/iconza/Car.png) no-repeat;
-    float: start;
-    padding-top: 5px;
-    padding-bottom: 10px;
-
+.active {
+    background-color: #4CAF50;
 }
+</style>
+</head>
+<body>
 
-#menu ul li:nth-of-type(3){
+<ul>
+  <li><a class="active" href="#home"><img src="image1.jpg">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 
-    background:url(./images/iconza/house.png) no-repeat;
-    float: start;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
 
-#menu ul li:nth-of-type(4){
-
-    background:url(./images/iconza/offer.png) no-repeat;
-    float: start;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-#menu ul li:nth-of-type(5){
-
-    background:url(./images/iconza/mail_32x32.png) no-repeat;
-    float: start;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-    
-    
 <style>
 
     body {
