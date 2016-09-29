@@ -7,3 +7,11 @@
   
 <input type="text" name="firstname" title="First Name" style="color:#888;" 
     value="First Name" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+  
+  
+function inputFocus(i){
+    if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+}
+function inputBlur(i){
+    if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
+}
