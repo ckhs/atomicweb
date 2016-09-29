@@ -3,13 +3,7 @@
 <body bgcolor="black">
 
 <center><img src="feclogo.fw.png" alt="Mountain View" style="width:304px;height:228px;"></center>
-  
-  function inputFocus(i){
-    if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
-}
-function inputBlur(i){
-    if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
-}
+
 <input type="text" name="firstname" title="First Name" style="color:#888;" 
     value="First Name" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
 
